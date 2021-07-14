@@ -2,10 +2,11 @@
   <v-tooltip bottom>
     <template v-slot:activator="{ on, attrs }">
       <v-btn icon @click="toggleTheme()" v-bind="attrs" v-on="on">
-        <v-icon>mdi-theme-light-dark</v-icon>
+        <v-icon>mdi-brightness-6</v-icon>
       </v-btn>
     </template>
-    <span>حالت تاریک و روشن</span>
+    <span v-if="this.$vuetify.theme.dark">حالت روشن</span>
+    <span v-else>حالت تاریک</span>
   </v-tooltip>
 </template>
 

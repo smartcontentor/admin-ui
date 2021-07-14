@@ -15,11 +15,11 @@
         </div>
         <div class="d-flex justify-space-between mt-3">
           <div>
-            <v-btn small elevation="0">
+            <v-btn elevation="2" small>
               <v-icon small left>mdi-pencil</v-icon>
               ویرایش
             </v-btn>
-            <v-btn small elevation="0">
+            <v-btn elevation="2" small>
               <v-icon small left>mdi-eye</v-icon>
               نمایش
             </v-btn>
@@ -27,10 +27,10 @@
           <v-dialog v-model="dialog" persistent max-width="290">
             <template v-slot:activator="{ on, attrs }">
               <v-btn
+                elevation="2"
                 dark
                 small
                 text
-                elevation="0"
                 class="red darken-1"
                 v-bind="attrs"
                 v-on="on"
