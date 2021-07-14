@@ -1,7 +1,12 @@
 <template>
-  <v-btn icon @click="toggleTheme()">
-    <v-icon>mdi-theme-light-dark</v-icon>
-  </v-btn>
+  <v-tooltip bottom>
+    <template v-slot:activator="{ on, attrs }">
+      <v-btn icon @click="toggleTheme()" v-bind="attrs" v-on="on">
+        <v-icon>mdi-theme-light-dark</v-icon>
+      </v-btn>
+    </template>
+    <span>حالت تاریک و روشن</span>
+  </v-tooltip>
 </template>
 
 <script>
