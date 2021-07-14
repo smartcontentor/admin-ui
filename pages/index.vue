@@ -48,13 +48,13 @@
                 auto-draw
               ></v-sparkline>
               <v-row>
-                <v-col>
+                <v-col col="12" lg="6">
                   <v-card elevation="0" outlined class="pa-2">
                     <h3>درصد فروش در ماه گذشته</h3>
                     <h1 class="red--text my-1">۳٪-</h1>
                   </v-card>
                 </v-col>
-                <v-col>
+                <v-col col="12" lg="6">
                   <v-card elevation="0" outlined class="pa-2">
                     <h3>درصد فروش در هفته گذشته</h3>
                     <h1 class="green--text my-1">۲۳٪+</h1>
