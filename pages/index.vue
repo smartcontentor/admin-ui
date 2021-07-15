@@ -28,12 +28,12 @@
     </v-row>
     <v-row class="my-5">
       <v-col cols="12" md="6">
-        <v-card :to="to" class="mx-auto" style="width:100%;" outlined>
-          <v-list-item three-line>
+        <v-card :to="to" class="mx-auto" outlined>
+          <v-list-item>
             <v-list-item-content>
-              <h1>
+              <h3>
                 آمار خرید محصولات
-              </h1>
+              </h3>
               <v-sparkline
                 :value="value"
                 :gradient="gradient"
@@ -48,165 +48,154 @@
                 auto-draw
               ></v-sparkline>
               <v-row>
-                <v-col col="12" lg="6">
+                <v-col cols="12" lg="6">
                   <v-card elevation="0" outlined class="pa-2">
                     <h3>درصد فروش در ماه گذشته</h3>
-                    <h1 class="red--text my-1">۳٪-</h1>
+                    <h4 class="red--text my-1">۳٪-</h4>
                   </v-card>
                 </v-col>
-                <v-col col="12" lg="6">
+                <v-col cols="12" lg="6">
                   <v-card elevation="0" outlined class="pa-2">
                     <h3>درصد فروش در هفته گذشته</h3>
-                    <h1 class="green--text my-1">۲۳٪+</h1>
+                    <h4 class="green--text my-1">۲۳٪+</h4>
                   </v-card>
                 </v-col>
               </v-row>
               <v-card elevation="2"></v-card>
             </v-list-item-content>
           </v-list-item>
-          <v-btn to="/products" class="ma-1" plain color="primary" right
+          <v-btn
+            to="/products"
+            class="ma-1 no-letter-spacing"
+            plain
+            color="primary"
+            right
             >مشاهده بیشتر</v-btn
           >
         </v-card>
       </v-col>
       <v-col cols="12" md="6">
         <v-card :to="to" class="mx-auto" style="width:100%;" outlined>
-          <v-list-item three-line>
+          <v-list-item>
             <v-list-item-content>
-              <h1>
+              <h3>
                 آخرین کاربران سایت
-              </h1>
-              <v-col>
+              </h3>
+              <v-col style="padding:20px 0;">
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/women/22.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/21.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/20.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/24.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/women/25.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/26.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/women/27.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/28.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/women/29.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/30.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/31.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/women/32.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/50.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/52.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/51.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/women/41.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/women/45.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/women/42.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/women/47.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/48.jpg"
-                    alt=""
                   />
                 </v-avatar>
                 <v-avatar color="teal" size="48" class="ma-2">
                   <img
                     src="https://randomuser.me/api/portraits/thumb/men/40.jpg"
-                    alt=""
                   />
                 </v-avatar>
               </v-col>
             </v-list-item-content>
           </v-list-item>
-          <v-btn to="/users" class="ma-1" plain color="primary" right
+          <v-btn
+            to="/users"
+            class="ma-1 no-letter-spacing"
+            plain
+            color="primary"
+            right
             >مشاهده بیشتر</v-btn
           >
         </v-card>
@@ -240,3 +229,17 @@ export default {
   })
 };
 </script>
+
+<style scoped>
+h3 {
+  font-size: 1.2rem !important;
+}
+
+h4 {
+  font-size: 2rem !important;
+}
+
+.no-letter-spacing {
+  letter-spacing: 0 !important;
+}
+</style>

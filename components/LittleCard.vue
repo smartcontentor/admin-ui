@@ -1,5 +1,5 @@
 <template>
-  <v-card :to="to" class="mx-auto" max-width="380" outlined>
+  <v-card :to="to" outlined>
     <v-list-item three-line>
       <v-list-item-avatar tile class="rounded-circle" size="80" color="grey">
         <v-icon large>
@@ -7,9 +7,9 @@
         </v-icon>
       </v-list-item-avatar>
       <v-list-item-content>
-        <h1>
+        <h3>
           {{ headline }}
-        </h1>
+        </h3>
         <v-list-item-subtitle>{{ desc }}</v-list-item-subtitle>
       </v-list-item-content>
     </v-list-item>
@@ -21,3 +21,9 @@ export default {
   props: ["to", "headline", "desc", "icon"]
 };
 </script>
+
+<style scoped>
+h3 {
+  font-size: 1.6rem !important;
+}
+</style>

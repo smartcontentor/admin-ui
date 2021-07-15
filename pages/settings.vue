@@ -4,7 +4,7 @@
       <h1 class="d-inline p-0 mx-5">تنظیمات</h1>
       <v-btn class="green darken-2" dark large>
         <v-icon left>mdi-content-save</v-icon>
-        ذخیره تغییرات
+        <span class="no-letter-spacing">ذخیره تغییرات</span>
       </v-btn>
     </v-row>
     <v-divider></v-divider>
@@ -92,4 +92,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.no-letter-spacing {
+  letter-spacing: 0 !important;
+}
+</style>

@@ -38,8 +38,10 @@
               right
               style="justify-content:flex-start;"
             >
-              <v-icon right large class="mx-4">mdi-account</v-icon>
-              ویرایش اطلاعات کاربری
+              <v-icon right large class="mx-4 no-letter-spacing"
+                >mdi-account</v-icon
+              >
+              <span class="no-letter-spacing">ویرایش اطلاعات کاربری</span>
             </v-btn>
           </v-list-item>
 
@@ -51,8 +53,10 @@
               right
               style="justify-content:flex-start;"
             >
-              <v-icon right large class="mx-4">mdi-archive</v-icon>
-              مشاهده سفارشات سایت
+              <v-icon right large class="mx-4 no-letter-spacing"
+                >mdi-archive</v-icon
+              >
+              <span class="no-letter-spacing"> مشاهده سفارشات سایت</span>
             </v-btn>
           </v-list-item>
 
@@ -66,7 +70,7 @@
               style="justify-content:flex-start;"
             >
               <v-icon right large class="mx-4">mdi-logout</v-icon>
-              خروج از سیستم
+              <span class="no-letter-spacing">خروج از سیستم</span>
             </v-btn>
           </v-list-item>
         </v-list>
@@ -86,4 +90,8 @@ export default {
 };
 </script>
 
-<style scoped></style>
+<style scoped>
+.no-letter-spacing {
+  letter-spacing: 0 !important;
+}
+</style>

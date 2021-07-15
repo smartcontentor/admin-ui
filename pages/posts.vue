@@ -4,7 +4,7 @@
       <h1 class="d-inline p-0 mx-5">نوشته ها</h1>
       <v-btn class="green darken-2" dark large>
         <v-icon left large>mdi-plus</v-icon>
-        افزودن نوشته
+        <span class="no-letter-spacing">افزودن نوشته</span>
       </v-btn>
     </v-row>
     <ArticleCard headline="عنوان مقاله" />
@@ -33,4 +33,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.no-letter-spacing {
+  letter-spacing: 0 !important;
+}
+</style>
