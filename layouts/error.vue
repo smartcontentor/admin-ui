@@ -1,41 +1,41 @@
 <template>
-  <v-app dark align="center" justify="center">
-    <h1>
-      هیچی پیدا نشد!!!
-    </h1>
-    <NuxtLink to="/">
-      Home page
-    </NuxtLink>
-  </v-app>
+  <div>
+    <h1 class="d-block">404</h1>
+    <p>چیزی پیدا نشد!</p>
+    <v-btn to="/">
+      بازگشت به خانه
+    </v-btn>
+  </div>
 </template>
 
 <script>
-export default {
-  layout: "empty",
-  props: {
-    error: {
-      type: Object,
-      default: null
-    }
-  },
-  data() {
-    return {
-      pageNotFound: "404 Not Found",
-      otherError: "An error occurred"
-    };
-  },
-  head() {
-    const title =
-      this.error.statusCode === 404 ? this.pageNotFound : this.otherError;
-    return {
-      title
-    };
-  }
-};
+export default {};
 </script>
 
 <style scoped>
 h1 {
-  font-size: 20px;
+  font-size: 12rem;
+  margin: 0;
+  padding: 0;
+  height: 50%;
+}
+p {
+  font-size: 24px;
+}
+div {
+  height: 80vh;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+@media (max-width: 768px) {
+  h1 {
+    font-size: 12rem;
+    margin: 0;
+    padding: 0;
+    height: 45%;
+  }
 }
 </style>

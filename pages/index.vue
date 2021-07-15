@@ -1,7 +1,7 @@
 <template>
   <div>
     <v-row class="my-5">
-      <v-col col="12" md="4">
+      <v-col cols="12" md="4">
         <LittleCard
           to="/posts"
           headline="نوشته ها"
@@ -9,7 +9,7 @@
           icon="mdi-pin"
         />
       </v-col>
-      <v-col col="12" md="4">
+      <v-col cols="12" md="4">
         <LittleCard
           to="/products"
           headline="محصولات"
@@ -17,7 +17,7 @@
           icon="mdi-archive"
         />
       </v-col>
-      <v-col col="12" md="4">
+      <v-col cols="12" md="4">
         <LittleCard
           to="/users"
           headline="کاربران"
@@ -27,7 +27,7 @@
       </v-col>
     </v-row>
     <v-row class="my-5">
-      <v-col col="12" md="6">
+      <v-col cols="12" md="6">
         <v-card :to="to" class="mx-auto" style="width:100%;" outlined>
           <v-list-item three-line>
             <v-list-item-content>
@@ -69,7 +69,7 @@
           >
         </v-card>
       </v-col>
-      <v-col col="12" md="6">
+      <v-col cols="12" md="6">
         <v-card :to="to" class="mx-auto" style="width:100%;" outlined>
           <v-list-item three-line>
             <v-list-item-content>
