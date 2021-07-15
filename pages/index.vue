@@ -226,7 +226,7 @@ export default {
     gradients,
     fill: false,
     autoLineWidth: false
-  })
+  }),
 };
 </script>
 

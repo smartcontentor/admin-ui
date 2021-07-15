@@ -6,22 +6,22 @@
           <h3>{{ headline }}</h3>
           <h4>
             <v-icon>mdi-account</v-icon>
-            محمد رضا سلیمی
+            <span class="np-letter-spacing">محمد رضا سلیمی</span>
           </h4>
           <h4>
             <v-icon>mdi-calendar</v-icon>
-            ۴ خرداد ۱۴۰۰
+            <span class="no-letter-spacing">۴ خرداد ۱۴۰۰</span>
           </h4>
         </div>
         <div class="d-flex justify-space-between mt-3">
           <div>
             <v-btn elevation="2" small>
               <v-icon small left>mdi-pencil</v-icon>
-              ویرایش
+              <span class="no-letter-spacing">ویرایش</span>
             </v-btn>
             <v-btn elevation="2" small>
               <v-icon small left>mdi-eye</v-icon>
-              نمایش
+              <span class="no-letter-spacing"></span>
             </v-btn>
           </div>
           <v-dialog v-model="dialog" persistent max-width="290">
@@ -36,7 +36,7 @@
                 v-on="on"
               >
                 <v-icon small left>mdi-delete</v-icon>
-                حذف
+                <span class="no-letter-spacing">حذف</span>
               </v-btn>
             </template>
             <v-card>
@@ -46,11 +46,11 @@
               <v-card-actions>
                 <v-spacer></v-spacer>
                 <v-btn text @click="dialog = false">
-                  مخالفم
+                  <span class="no-letter-spacing">مخالفم</span>
                 </v-btn>
                 <v-btn color="red darken-1" text @click="dialog = false">
                   <v-icon left>mdi-delete</v-icon>
-                  بله حذف کن!
+                  <span class="no-letter-spacing">بله حذف کن!</span>
                 </v-btn>
               </v-card-actions>
             </v-card>
@@ -72,4 +72,8 @@ export default {
 };
 </script>
 
-<style lang="scss" scoped></style>
+<style scoped>
+.no-letter-spacing {
+  letter-spacing: 0 !important;
+}
+</style>

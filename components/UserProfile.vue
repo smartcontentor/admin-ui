@@ -18,7 +18,7 @@
       <v-card>
         <v-list>
           <v-list-item>
-            <v-list-item-content>
+            <v-list-item-content class="mx-5">
               <v-list-item-title><h3>محمد رضا سلیمی</h3></v-list-item-title>
               <v-list-item-subtitle class="mt-2"
                 >مدیر سایت</v-list-item-subtitle
