@@ -45,6 +45,7 @@
                 :fill="fill"
                 :type="type"
                 :auto-line-width="autoLineWidth"
+                auto-draw
               ></v-sparkline>
               <v-row>
                 <v-col col="12" lg="6">
