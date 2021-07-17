@@ -21,7 +21,7 @@
             </v-btn>
             <v-btn elevation="2" small>
               <v-icon small left>mdi-eye</v-icon>
-              <span class="no-letter-spacing"></span>
+              <span class="no-letter-spacing">نمایش</span>
             </v-btn>
           </div>
           <v-dialog v-model="dialog" persistent max-width="290">
