@@ -12,6 +12,7 @@
       <h3 class="d-inline p-0 mx-5">اطلاعات کاربری</h3>
     </v-row>
     <v-row>
+      
       <v-col cols="12" md="4">
         <v-text-field
           label="نام و نام خانوادگی"

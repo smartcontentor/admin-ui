@@ -51,13 +51,13 @@
                 <v-col cols="12" lg="6">
                   <v-card elevation="0" outlined class="pa-2">
                     <h3>درصد فروش در ماه گذشته</h3>
-                    <h4 class="red--text my-1">۳٪-</h4>
+                    <h4 class="red--text my-1">3٪-</h4>
                   </v-card>
                 </v-col>
                 <v-col cols="12" lg="6">
                   <v-card elevation="0" outlined class="pa-2">
                     <h3>درصد فروش در هفته گذشته</h3>
-                    <h4 class="green--text my-1">۲۳٪+</h4>
+                    <h4 class="green--text my-1">23٪+</h4>
                   </v-card>
                 </v-col>
               </v-row>
@@ -226,7 +226,7 @@ export default {
     gradients,
     fill: false,
     autoLineWidth: false
-  }),
+  })
 };
 </script>
 

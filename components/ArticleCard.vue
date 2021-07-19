@@ -1,12 +1,13 @@
 <template>
-  <v-row>
-    <v-col col="12">
-      <v-card class="pa-5 my-1">
+  <v-card class="pa-5 my-5">
+    <div class="d-flex justify-space-between">
+      <v-icon style="cursor:move;">mdi-drag-horizontal-variant</v-icon>
+      <div style="width:100%;margin-right:10px;">
         <div class="d-flex justify-space-between">
           <h3>{{ headline }}</h3>
-          <h4>
+          <h4 class="d-none d-md-block">
             <v-icon>mdi-account</v-icon>
-            <span class="np-letter-spacing">محمد رضا سلیمی</span>
+            <span class="no-letter-spacing ">محمد رضا سلیمی</span>
           </h4>
           <h4>
             <v-icon>mdi-calendar</v-icon>
@@ -56,9 +57,9 @@
             </v-card>
           </v-dialog>
         </div>
-      </v-card>
-    </v-col>
-  </v-row>
+      </div>
+    </div>
+  </v-card>
 </template>
 
 <script>

@@ -88,6 +88,6 @@ export default {
 
 <style scoped>
 #main-body {
-  font-family: "Vazir", sans-serif !important;
+  font-family: "Vazir FD", sans-serif !important;
 }
 </style>

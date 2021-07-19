@@ -5,7 +5,7 @@
         <v-badge
           overlap
           content="3"
-          color="primary"
+          color="green darken-1"
           left
           offset-x="20"
           offset-y="20"

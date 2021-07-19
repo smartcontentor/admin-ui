@@ -25,7 +25,7 @@ export default {
       {
         rel: "stylesheet",
         href:
-          "https://cdn.jsdelivr.net/gh/rastikerdar/vazir-font@v29.1.0/dist/font-face.css"
+          "https://unpkg.com/browse/vazir-font@29.1.0/dist/Farsi-Digits/font-face-FD.css"
       }
     ]
   },
@@ -34,7 +34,7 @@ export default {
   css: [],
 
   // Plugins to run before rendering page: https://go.nuxtjs.dev/config-plugins
-  plugins: [],
+  plugins: ["@/plugins/vuedraggable"],
 
   // Auto import components: https://go.nuxtjs.dev/config-components
   components: true,
