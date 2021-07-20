@@ -67,6 +67,11 @@ export default {
           to: "/products"
         },
         {
+          icon: "mdi-calendar-check",
+          title: "وظایف",
+          to: "/tasks"
+        },
+        {
           icon: "mdi-account",
           title: "کاربران",
           to: "/users"
