@@ -1,5 +1,5 @@
 <template>
-  <v-card class="pa-2 ml-3" style="width:300px;height:fit-content;">
+  <v-card class="pa-2 ma-3" style="width:300px;height:fit-content;">
     <v-card-title class="p-0 d-flex justify-space-between">
       <h4>{{ title }}</h4>
       <v-icon style="cursor:move;">mdi-drag-horizontal-variant</v-icon>
