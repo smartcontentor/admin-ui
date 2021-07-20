@@ -117,8 +117,7 @@ export default {
 
 <style scoped>
 .main {
-  display: flex;
-  flex-direction: row;
+  display: inline-flex;
 }
 
 .no-letter-spacing {
@@ -131,7 +130,7 @@ export default {
 
 .light {
   overflow: auto;
-  height: 85vh;
+  height: 75vh;
 }
 .light::-webkit-scrollbar {
   width: 15px;
@@ -154,7 +153,7 @@ export default {
 
 .dark {
   overflow: auto;
-  height: 85vh;
+  height: 75vh;
 }
 
 .dark::-webkit-scrollbar {
@@ -176,9 +175,9 @@ export default {
   background: white;
 }
 
-@media (max-width: 768px) {
+/* @media (max-width: 768px) {
   .main {
     flex-direction: column;
   }
-}
+} */
 </style>
