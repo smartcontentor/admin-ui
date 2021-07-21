@@ -99,7 +99,6 @@ export default {
 }
 
 .edit-box .btn-save {
-  position: fixed;
   z-index: 99999 !important;
 }
 
