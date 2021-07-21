@@ -12,7 +12,7 @@
     >
       <v-list>
         <v-list-item
-          v-for="(item, i) in items"
+          v-for="(item, i) in this.$store.state.items"
           :key="i"
           :to="item.to"
           router
@@ -27,14 +27,7 @@
         </v-list-item>
       </v-list>
     </v-navigation-drawer>
-    <v-app-bar :clipped-left="clipped" fixed app>
-      <!-- <v-app-bar-nav-icon @click.stop="drawer = !drawer" /> -->
-      <v-toolbar-title v-text="title" />
-      <v-spacer />
-      <ToggleTheme />
-      <Notifications />
-      <UserProfile />
-    </v-app-bar>
+    <Navbar />
     <v-main>
       <v-container>
         <Nuxt />
@@ -50,38 +43,7 @@ export default {
       clipped: false,
       drawer: false,
       fixed: false,
-      items: [
-        {
-          icon: "mdi-apps",
-          title: "داشبورد",
-          to: "/"
-        },
-        {
-          icon: "mdi-pin",
-          title: "نوشته ها",
-          to: "/posts"
-        },
-        {
-          icon: "mdi-archive",
-          title: "محصولات",
-          to: "/products"
-        },
-        {
-          icon: "mdi-calendar-check",
-          title: "وظایف",
-          to: "/tasks"
-        },
-        {
-          icon: "mdi-account",
-          title: "کاربران",
-          to: "/users"
-        },
-        {
-          icon: "mdi-cog",
-          title: "تنظیمات",
-          to: "/settings"
-        }
-      ],
+
       miniVariant: false,
       right: true,
       rightDrawer: false,

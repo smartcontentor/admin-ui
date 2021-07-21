@@ -21,12 +21,8 @@
         >mdi-drag-horizontal-variant</v-icon
       >
     </v-card-title>
-    <v-btn block color="green darken-1 white--text no-letter-spacing mb-2">
-      <v-icon>mdi-plus</v-icon>
-      افزودن وظیفه
-    </v-btn>
+
     <draggable
-      class="list-group"
       :class="scrollbarTheme"
       :list="list1"
       group="items"
@@ -39,6 +35,16 @@
         :title="task.title"
       />
     </draggable>
+    <div>
+      <v-btn
+        text
+        block
+        color="green darken-1 white--text no-letter-spacing mb-2"
+      >
+        <v-icon>mdi-plus</v-icon>
+        <span class="no-letter-spacing">افزودن وظیفه</span>
+      </v-btn>
+    </div>
   </v-card>
 </template>
 
@@ -75,30 +81,58 @@ export default {
   letter-spacing: 0 !important;
 }
 
-.list-group {
-  height: fit-content;
-  max-height: 370px;
+.light {
   overflow-x: hidden;
-  overflow: auto;
+  overflow-y: auto;
+  height: fit-content;
+  max-height: 68vh;
   padding: 0 2px;
+  margin: 0 4px;
 }
 
-.list-group::-webkit-scrollbar {
+.light::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+.light::-webkit-scrollbar-track {
+  background: none;
+}
+
+.light::-webkit-scrollbar-thumb {
+  background: #b0b0b0;
+  border: solid 1px #b0b0b0;
+  border-radius: 7px;
+}
+
+.light::-webkit-scrollbar-thumb:hover {
+  background: black;
+}
+
+.dark {
+  overflow-x: hidden;
+  overflow-y: auto;
+  height: fit-content;
+  max-height: 68vh;
+  padding: 0 2px;
+  margin: 0 4px;
+}
+
+.dark::-webkit-scrollbar {
   width: 15px;
 }
 
-.list-group::-webkit-scrollbar-track {
-  background: #202020;
-  border-left: 1px solid #2c2c2c;
+.dark::-webkit-scrollbar-track {
+  background: none;
 }
 
-.list-group::-webkit-scrollbar-thumb {
+.dark::-webkit-scrollbar-thumb {
   background: #3e3e3e;
   border: solid 3px #202020;
   border-radius: 7px;
 }
 
-.list-group::-webkit-scrollbar-thumb:hover {
+.dark::-webkit-scrollbar-thumb:hover {
   background: white;
 }
 </style>
