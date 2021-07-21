@@ -28,7 +28,6 @@ export default {
 
 <style scoped>
 .item {
-  z-index: 9999;
   cursor: pointer;
   height: 40px;
 }
