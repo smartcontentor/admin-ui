@@ -21,14 +21,18 @@
         >mdi-drag-horizontal-variant</v-icon
       >
     </v-card-title>
-
     <draggable
+      :animation="300"
+      :fallback-tolerance="1"
+      :scroll-sensitivity="1"
+      :force-fallback="true"
       :class="scrollbarTheme"
       :list="list1"
       group="items"
-      @change="log"
+      :disabled="isdisable()"
     >
       <TaskCard
+        @drag="dragM"
         v-for="task in tasks"
         :id="task.id"
         :key="task.id"
@@ -49,6 +53,8 @@
 </template>
 
 <script>
+import { isMobile, isTablet } from "mobile-device-detect";
+
 export default {
   props: ["id", "title", "tasks"],
   computed: {
@@ -59,7 +65,9 @@ export default {
   data() {
     return {
       textfield: false,
-      defaultTitle: this.title
+      defaultTitle: this.title,
+      drag: false,
+      disabled: true
     };
   },
   methods: {
@@ -70,6 +78,13 @@ export default {
       } else {
         this.textfield = !this.textfield;
         this.title = this.defaultTitle;
+      }
+    },
+    isdisable() {
+      if (isMobile || isTablet) {
+        return true;
+      } else {
+        return false;
       }
     }
   }
@@ -84,6 +99,7 @@ export default {
 .light {
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   height: fit-content;
   max-height: 68vh;
   padding: 0 2px;
@@ -112,6 +128,7 @@ export default {
 .dark {
   overflow-x: hidden;
   overflow-y: auto;
+  -webkit-overflow-scrolling: touch;
   height: fit-content;
   max-height: 68vh;
   padding: 0 2px;

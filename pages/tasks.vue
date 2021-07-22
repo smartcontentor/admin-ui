@@ -1,7 +1,12 @@
 <template>
   <div class="tasks-box">
     <div :class="scrollbarTheme" class="items" style="width:100%;">
-      <draggable class="main">
+      <draggable
+        :animation="200"
+        class="main"
+        :disabled="isdisable()"
+        :scroll-sensitivity="0"
+      >
         <TaskListCard
           v-for="list in this.$store.state.lists"
           :key="list.id"
@@ -15,13 +20,29 @@
 </template>
 
 <script>
+import { isMobile, isTablet } from "mobile-device-detect";
+
 export default {
+  layout: "tasks_layout",
   computed: {
     scrollbarTheme() {
       return this.$vuetify.theme.dark ? "dark" : "light";
     }
   },
-  layout: "tasks_layout"
+  methods: {
+    disableScroll() {
+      setTimeout(() => {
+        return false;
+      }, 200);
+    },
+    isdisable() {
+      if (isMobile || isTablet) {
+        return true;
+      } else {
+        return false;
+      }
+    }
+  }
 };
 </script>
 
@@ -32,6 +53,7 @@ export default {
   overflow-y: hidden;
   overflow-x: auto;
 }
+
 .main {
   display: inline-flex;
 }

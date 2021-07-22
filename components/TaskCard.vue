@@ -69,7 +69,7 @@ export default {
         this.showCard = !this.showCard;
         this.title = this.defaultTitle;
       }
-    }
+    },
   }
 };
 </script>

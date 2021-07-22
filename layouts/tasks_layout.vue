@@ -8,7 +8,8 @@
       <Notifications />
       <UserProfile />
     </v-app-bar>
-    <v-navigation-drawer v-model="drawer" absolute bottom temporary right>
+    <Nuxt />
+    <v-navigation-drawer v-model="drawer" fixed bottom temporary right>
       <v-list nav class="pa-0 ma-0 my-3">
         <v-list-item-group v-model="group">
           <v-list-item
@@ -27,7 +28,6 @@
         </v-list-item-group>
       </v-list>
     </v-navigation-drawer>
-    <Nuxt />
   </v-app>
 </template>
 
