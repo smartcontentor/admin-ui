@@ -1,12 +1,7 @@
 <template>
   <div class="tasks-box">
     <div :class="scrollbarTheme" class="items" style="width:100%;">
-      <draggable
-        :animation="200"
-        class="main"
-        :disabled="isdisable()"
-        :scroll-sensitivity="0"
-      >
+      <draggable :animation="200" class="main" :delay="200">
         <TaskListCard
           v-for="list in this.$store.state.lists"
           :key="list.id"
