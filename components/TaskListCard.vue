@@ -29,7 +29,7 @@
       :class="scrollbarTheme"
       :list="list1"
       group="items"
-      :delay="200"
+      :delay="100"
     >
       <TaskCard
         @drag="dragM"
